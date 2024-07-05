@@ -22,7 +22,7 @@ const handleObjectsRequest = async (req, res) => {
         if (response.data) {
             res.send(response.data);
         } else {
-            res.status(500).send("Unexpected Response Structure");
+            res.status(500).send("Unexpected response structure");
         }
     } catch (error) {
         console.error("Error fetching objects:", error);
