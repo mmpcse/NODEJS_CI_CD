@@ -1,6 +1,6 @@
----
 applications:
 - name: nodejs_ci_cd
   random-route: true
-  buildpack: nodejs_buildpack
+  buildpacks:
+    - nodejs_buildpack
   memory: 512M
