@@ -1,0 +1,16 @@
+ID: basicnodejs
+_schema-version: '3.1'
+version: 0.0.1
+parameters:
+  enable-parallel-deployments: true
+
+modules:
+  - name: basicnodejs-service
+    type: nodejs
+    path: srv
+    build-parameters:
+      ignore:
+        - 'default-*.json'
+        - .env
+        - '*node_modules*'
+        - package-lock.json
